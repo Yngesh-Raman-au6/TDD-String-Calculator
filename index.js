@@ -12,7 +12,14 @@ function stringCalculator(string) {
         delimiter = string.split("\n")[0].substring(2);
         numbersString = string.split("\n")[1];
     }
-    return numbersString.split(delimiter).reduce((acc, curr) => acc + parseInt(curr), 0);
+    const numbers = numbersString.split(delimiter).map((value) => parseInt(value));
+    const negativeNumbers = numbers.filter((num) => num < 0);
+
+    if (negativeNumbers.length > 0) {
+        throw new Error(`Negative numbers not allowed ${negativeNumbers.join(",")}`);
+    }
+
+    return numbers.reduce((accumulator, current) => accumulator + current, 0);
 }   
 
 module.exports = { stringCalculator };
