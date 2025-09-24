@@ -1,0 +1,25 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "pracitce-assignment",
+  "main": "stringCalculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yngesh-Raman-au6/TDD-String-Calculator.git"
+  },
+  "keywords": [
+    "tdd"
+  ],
+  "author": "Yngesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yngesh-Raman-au6/TDD-String-Calculator/issues"
+  },
+  "homepage": "https://github.com/Yngesh-Raman-au6/TDD-String-Calculator#readme",
+  "devDependencies": {
+    "jest": "^30.1.3"
+  }
+}
