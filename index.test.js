@@ -24,6 +24,10 @@ describe("stringCalculator", () => {
   it("should return the sum of two numbers separated by a custom delimiter", () => {
     expect(stringCalculator("//;\n1;2")).toBe(3);
   });
+
+  it("should throw an error if the string contains a negative number", () => {
+    expect(stringCalculator("1,-2")).toThrow("negatives not allowed");
+  });
   
   
 });
