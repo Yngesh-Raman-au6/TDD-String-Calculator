@@ -20,6 +20,10 @@ describe("stringCalculator", () => {
   it("should return the sum of two numbers separated by a comma and a newline", () => {
     expect(stringCalculator("1,2\n3")).toBe(6);
   });
+
+  it("should return the sum of two numbers separated by a custom delimiter", () => {
+    expect(stringCalculator("//;\n1;2")).toBe(3);
+  });
   
   
 });
