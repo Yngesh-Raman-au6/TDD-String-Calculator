@@ -8,6 +8,9 @@ function stringCalculator(string) {
     if (string.includes(",")) {
         return string.split(",").reduce((acc, curr) => acc + parseInt(curr), 0);
     }
+    if (string.includes("\n")) {
+        return string.split("\n").reduce((acc, curr) => acc + parseInt(curr), 0);
+    }
     return 0;
 }   
 
