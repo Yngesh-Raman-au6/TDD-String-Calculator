@@ -8,6 +8,10 @@ describe("stringCalculator", () => {
   it("should return the same number for a single number", () => {
     expect(stringCalculator("1")).toBe(1);
   });
+
+  it("should return the sum of two numbers separated by a comma", () => {
+    expect(stringCalculator("1,2")).toBe(3);
+  });
   
   
 });
